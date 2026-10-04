@@ -12,9 +12,7 @@
         "peppol",
         "ubl",
         "validation",
-        "xml",
-        "xrechnung",
-        "zugferd"
+        "xml"
     ],
     "homepage": "https://pnscripts.com",
     "authors": [

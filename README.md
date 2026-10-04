@@ -171,6 +171,12 @@ PN_INVOICE_UPDATE_GOLDEN=1 vendor/bin/phpunit --filter GoldenFileTest   # after 
 
 The official EN 16931 test files in `tests/fixtures/official/` are EUPL-1.2 licensed, kept separate with their own [NOTICE](tests/fixtures/official/NOTICE), and are not part of the Composer package.
 
+## Support and more from PN Scripts
+
+- Issues and questions: [GitHub issues](https://github.com/pnscripts/pn-invoice/issues). Security reports: see [SECURITY.md](SECURITY.md).
+- Need e-invoicing built into a Laravel or Filament app, or an upgrade to Laravel 13 / Filament 5? See [Laravel and Filament upgrades and care](https://pnscripts.com/services/laravel-filament-care).
+- [PN Shop](https://github.com/pnscripts/pn-shop): open-source Laravel e-commerce platform. All products: [pnscripts.com/products](https://pnscripts.com/products)
+
 ## Licence
 
 PN Invoice is released under the [MIT License](LICENSE), copyright ПН СКРИПТС ЕООД. The bundled XML Schemas keep their own licences (OASIS and UN/CEFACT notices); see [NOTICE](NOTICE). "PN Scripts" and "PN Invoice" are names of ПН СКРИПТС ЕООД and are not covered by the code licence.

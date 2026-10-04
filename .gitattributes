@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+*.xsd linguist-vendored
+/tests/fixtures/** linguist-vendored
+
+# Third-party files are kept byte-for-byte as downloaded (no line ending normalisation)
+/resources/schemas/** -text
+/tests/fixtures/official/** -text
+
+# Not shipped in Composer dist archives
+/.github export-ignore
+/tests export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.editorconfig export-ignore
+/.php-cs-fixer.dist.php export-ignore
+/phpstan.neon.dist export-ignore
+/phpunit.xml.dist export-ignore

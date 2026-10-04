@@ -1,0 +1,28 @@
+EN 16931 official validation test files
+=======================================
+
+The files in this directory are third-party files. They are NOT licensed under
+the MIT License of PN Invoice and are NOT relicensed by PN Scripts.
+
+Licence:  European Union Public Licence (EUPL) v1.2 (full text: LICENSE-EUPL-1.2.txt).
+          Each file carries the header "Licensed under European Union Public
+          Licence (EUPL) version 1.2."
+Origin:   CEN/TC 434 and the European Commission (CEF eInvoicing),
+          https://github.com/ConnectingEurope/eInvoicing-EN16931
+Version:  tag validation-1.3.16 (released 2026-04-13), downloaded 2026-10-04 from
+          https://github.com/ConnectingEurope/eInvoicing-EN16931/archive/refs/tags/validation-1.3.16.zip
+          (SHA-256 161c136b7edbeeaa1f1397ee67da017c85062fb52b315ea63a681606a8bb666b)
+Changes:  none; files copied verbatim.
+
+Directory mapping (this directory -> upstream repository):
+
+  ubl/examples/         -> ubl/examples/
+  ubl/unit-invoice/     -> test/Invoice-unit-UBL/
+  ubl/unit-creditnote/  -> test/CreditNote-unit-UBL/
+  cii/examples/         -> cii/examples/
+  cii/unit/             -> test/cii/
+
+Use:      read-only test data for tests/Integration/OfficialExamplesTest.php and
+          tests/Integration/OfficialUnitTestsTest.php. The directory is marked
+          export-ignore in .gitattributes, so it is not part of Composer dist
+          archives. Source code of the upstream project is available at the URL above.

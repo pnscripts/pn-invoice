@@ -10,9 +10,10 @@
 
 Please do **not** open a public issue for security problems.
 
-Report vulnerabilities privately to PN Scripts through the contact form at
-https://pnscripts.com, with "PN Invoice security" in the subject. Include the
-affected version, a description, and a minimal reproduction (for example a
+Report vulnerabilities privately through GitHub's private vulnerability
+reporting: open https://github.com/pnscripts/pn-invoice/security/advisories/new
+(or the repository's **Security** tab, then **Report a vulnerability**). Include
+the affected version, a description, and a minimal reproduction (for example a
 sample XML file with all personal and company data removed).
 
 You will receive an acknowledgement within 5 working days. We aim to publish a

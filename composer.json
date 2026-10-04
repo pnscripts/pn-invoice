@@ -3,7 +3,19 @@
     "description": "PN Invoice: framework-agnostic PHP library to generate and validate EN 16931 e-invoices in UBL 2.1 and UN/CEFACT CII D16B syntax.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["e-invoice", "einvoice", "en16931", "ubl", "cii", "peppol", "invoice", "xml", "validation", "zugferd", "xrechnung"],
+    "keywords": [
+        "cii",
+        "e-invoice",
+        "einvoice",
+        "en16931",
+        "invoice",
+        "peppol",
+        "ubl",
+        "validation",
+        "xml",
+        "xrechnung",
+        "zugferd"
+    ],
     "homepage": "https://pnscripts.com",
     "authors": [
         {
@@ -34,13 +46,19 @@
             "PnScripts\\Invoice\\Tests\\": "tests/"
         }
     },
-    "bin": ["bin/pn-invoice"],
+    "bin": [
+        "bin/pn-invoice"
+    ],
     "scripts": {
         "test": "phpunit",
         "analyse": "phpstan analyse --memory-limit=512M",
         "cs": "php-cs-fixer fix --dry-run --diff",
         "cs:fix": "php-cs-fixer fix",
-        "check": ["@cs", "@analyse", "@test"]
+        "check": [
+            "@cs",
+            "@analyse",
+            "@test"
+        ]
     },
     "config": {
         "sort-packages": true,
@@ -49,5 +67,10 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/pnscripts/pn-invoice/issues",
+        "source": "https://github.com/pnscripts/pn-invoice",
+        "security": "https://github.com/pnscripts/pn-invoice/security/policy"
+    }
 }

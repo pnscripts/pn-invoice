@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Calculation;
+namespace Pnscripts\Invoice\Calculation;
 
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * Document totals (BG-22) and VAT breakdown (BG-23) derived from an invoice.

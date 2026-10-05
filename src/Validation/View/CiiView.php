@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
 use DOMDocument;
 use DOMElement;
 use InvalidArgumentException;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Writer\CiiWriter;
 
 /**
  * EN 16931 UN/CEFACT CII D16B syntax binding of {@see InvoiceView}.

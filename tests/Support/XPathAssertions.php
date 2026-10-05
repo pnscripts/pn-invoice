@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Support;
+namespace Pnscripts\Invoice\Tests\Support;
 
 use DOMDocument;
 use DOMXPath;
-use PnScripts\Invoice\Writer\CiiWriter;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 final class XPathAssertions
 {

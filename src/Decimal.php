@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice;
+namespace Pnscripts\Invoice;
 
 use InvalidArgumentException;
 use Stringable;

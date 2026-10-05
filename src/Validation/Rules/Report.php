@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\Violation;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\Violation;
 
 /**
  * Collects rule failures while a {@see RuleSet} runs.

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Writer;
+namespace Pnscripts\Invoice\Writer;
 
 use DOMDocument;
-use PnScripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Invoice;
 
 interface InvoiceWriter
 {

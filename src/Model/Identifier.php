@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * An identifier with an optional scheme (for example an electronic address with EAS code

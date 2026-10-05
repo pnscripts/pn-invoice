@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Postal address (BG-5, BG-8, BG-12, BG-15). Country code is ISO 3166-1 alpha-2.

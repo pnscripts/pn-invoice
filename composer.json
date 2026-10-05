@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PnScripts\\Invoice\\": "src/"
+            "Pnscripts\\Invoice\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PnScripts\\Invoice\\Tests\\": "tests/"
+            "Pnscripts\\Invoice\\Tests\\": "tests/"
         }
     },
     "bin": [

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
-use PnScripts\Invoice\Validation\View\InvoiceView;
+use Pnscripts\Invoice\Validation\View\InvoiceView;
 
 /**
  * A group of EN 16931 business rules implemented in PHP against the syntax-neutral {@see InvoiceView}.

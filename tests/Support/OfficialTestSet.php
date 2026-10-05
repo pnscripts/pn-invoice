@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Support;
+namespace Pnscripts\Invoice\Tests\Support;
 
 use DOMDocument;
 use DOMElement;

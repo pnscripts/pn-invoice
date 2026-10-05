@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Integration;
+namespace Pnscripts\Invoice\Tests\Integration;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
 
 /**
  * The official EN 16931 example invoices (CEN/TC 434 and others, EUPL-1.2, see

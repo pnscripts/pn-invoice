@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Payment instructions (BG-16). The type code is UNTDID 4461 (e.g. "30" credit transfer,

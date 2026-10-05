@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * A business term read from an XML document: its raw value (null when the element is absent)

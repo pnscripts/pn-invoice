@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation;
+namespace Pnscripts\Invoice\Validation;
 
 /**
  * The validation layer that produced a result.

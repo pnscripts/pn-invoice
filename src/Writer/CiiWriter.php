@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Writer;
+namespace Pnscripts\Invoice\Writer;
 
 use DateTimeImmutable;
 use DOMDocument;
 use DOMElement;
 use InvalidArgumentException;
-use PnScripts\Invoice\Calculation\Totals;
-use PnScripts\Invoice\Calculation\VatBreakdown;
-use PnScripts\Invoice\Model\Address;
-use PnScripts\Invoice\Model\AllowanceCharge;
-use PnScripts\Invoice\Model\Identifier;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Line;
-use PnScripts\Invoice\Model\Party;
-use PnScripts\Invoice\Model\PaymentMeans;
-use PnScripts\Invoice\Model\Period;
-use PnScripts\Invoice\Model\TaxCategory;
+use Pnscripts\Invoice\Calculation\Totals;
+use Pnscripts\Invoice\Calculation\VatBreakdown;
+use Pnscripts\Invoice\Model\Address;
+use Pnscripts\Invoice\Model\AllowanceCharge;
+use Pnscripts\Invoice\Model\Identifier;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Line;
+use Pnscripts\Invoice\Model\Party;
+use Pnscripts\Invoice\Model\PaymentMeans;
+use Pnscripts\Invoice\Model\Period;
+use Pnscripts\Invoice\Model\TaxCategory;
 
 /**
  * Writes UN/CEFACT Cross Industry Invoice (CII) D16B documents using the EN 16931 CII syntax binding.

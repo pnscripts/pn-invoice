@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 use DateTimeImmutable;
 use InvalidArgumentException;

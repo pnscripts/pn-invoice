@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation;
+namespace Pnscripts\Invoice\Validation;
 
 use DOMDocument;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Validation\Rules\BusinessRuleValidator;
-use PnScripts\Invoice\Validation\Schematron\SchematronValidator;
-use PnScripts\Invoice\Validation\Xsd\XsdValidator;
-use PnScripts\Invoice\Writer\CiiWriter;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Validation\Rules\BusinessRuleValidator;
+use Pnscripts\Invoice\Validation\Schematron\SchematronValidator;
+use Pnscripts\Invoice\Validation\Xsd\XsdValidator;
+use Pnscripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 /**
  * Validates UBL 2.1 / CII D16B e-invoices in layers:

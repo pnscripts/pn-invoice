@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Integration;
+namespace Pnscripts\Invoice\Tests\Integration;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Specification;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Validation\InvoiceValidator;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Writer\CiiWriter;
-use PnScripts\Invoice\Writer\InvoiceWriter;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Specification;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Writer\InvoiceWriter;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 /**
  * Golden files: the writers must keep producing byte-identical XML, and every golden file

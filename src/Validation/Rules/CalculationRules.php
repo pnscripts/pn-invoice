@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
-use PnScripts\Invoice\Decimal;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\View\AllowanceChargeView;
-use PnScripts\Invoice\Validation\View\InvoiceView;
-use PnScripts\Invoice\Validation\View\PartyView;
+use Pnscripts\Invoice\Decimal;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\View\AllowanceChargeView;
+use Pnscripts\Invoice\Validation\View\InvoiceView;
+use Pnscripts\Invoice\Validation\View\PartyView;
 
 /**
  * EN 16931 conditions and calculation rules (BR-CO-nn).

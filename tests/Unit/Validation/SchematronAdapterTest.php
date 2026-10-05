@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Validation;
+namespace Pnscripts\Invoice\Tests\Unit\Validation;
 
 use DOMDocument;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Validation\InvoiceValidator;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Schematron\CommandSchematronValidator;
-use PnScripts\Invoice\Validation\Schematron\SchematronValidator;
-use PnScripts\Invoice\Validation\Schematron\SvrlParser;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\ValidationResult;
-use PnScripts\Invoice\Validation\Violation;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Schematron\CommandSchematronValidator;
+use Pnscripts\Invoice\Validation\Schematron\SchematronValidator;
+use Pnscripts\Invoice\Validation\Schematron\SvrlParser;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\Violation;
 use RuntimeException;
 
 final class SchematronAdapterTest extends TestCase

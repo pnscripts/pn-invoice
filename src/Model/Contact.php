@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Contact point (BG-6, BG-9).

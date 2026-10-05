@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation;
+namespace Pnscripts\Invoice\Validation;
 
 use DOMDocument;
-use PnScripts\Invoice\Writer\CiiWriter;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 /**
  * Supported XML syntaxes, detected from the root element.

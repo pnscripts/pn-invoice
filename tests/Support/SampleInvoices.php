@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Support;
+namespace Pnscripts\Invoice\Tests\Support;
 
 use DateTimeImmutable;
-use PnScripts\Invoice\Model\Address;
-use PnScripts\Invoice\Model\AllowanceCharge;
-use PnScripts\Invoice\Model\Contact;
-use PnScripts\Invoice\Model\DocumentKind;
-use PnScripts\Invoice\Model\DocumentReference;
-use PnScripts\Invoice\Model\Identifier;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Line;
-use PnScripts\Invoice\Model\Party;
-use PnScripts\Invoice\Model\PaymentMeans;
-use PnScripts\Invoice\Model\Period;
-use PnScripts\Invoice\Model\Specification;
-use PnScripts\Invoice\Model\TaxCategory;
+use Pnscripts\Invoice\Model\Address;
+use Pnscripts\Invoice\Model\AllowanceCharge;
+use Pnscripts\Invoice\Model\Contact;
+use Pnscripts\Invoice\Model\DocumentKind;
+use Pnscripts\Invoice\Model\DocumentReference;
+use Pnscripts\Invoice\Model\Identifier;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Line;
+use Pnscripts\Invoice\Model\Party;
+use Pnscripts\Invoice\Model\PaymentMeans;
+use Pnscripts\Invoice\Model\Period;
+use Pnscripts\Invoice\Model\Specification;
+use Pnscripts\Invoice\Model\TaxCategory;
 
 /**
  * Fictitious invoices used by the tests and golden files. All names, numbers and

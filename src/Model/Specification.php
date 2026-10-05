@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Specification identifier (BT-24, UBL CustomizationID) and business process (BT-23, UBL ProfileID).

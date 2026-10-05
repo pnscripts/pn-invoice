@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Validation;
+namespace Pnscripts\Invoice\Tests\Unit\Validation;
 
 use DOMDocument;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Validation\InvoiceValidator;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\XmlLoader;
-use PnScripts\Invoice\Validation\Xsd\SchemaLocator;
-use PnScripts\Invoice\Validation\Xsd\XsdValidator;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\XmlLoader;
+use Pnscripts\Invoice\Validation\Xsd\SchemaLocator;
+use Pnscripts\Invoice\Validation\Xsd\XsdValidator;
+use Pnscripts\Invoice\Writer\UblWriter;
 use RuntimeException;
 
 final class XmlAndXsdTest extends TestCase

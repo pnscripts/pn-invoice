@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Writer;
+namespace Pnscripts\Invoice\Tests\Unit\Writer;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Specification;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Tests\Support\XPathAssertions as X;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Specification;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Tests\Support\XPathAssertions as X;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 final class UblWriterTest extends TestCase
 {

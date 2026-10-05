@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Xsd;
+namespace Pnscripts\Invoice\Validation\Xsd;
 
-use PnScripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\Syntax;
 use RuntimeException;
 
 /**

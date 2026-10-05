@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Integration;
+namespace Pnscripts\Invoice\Tests\Integration;
 
 use DOMDocument;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Tests\Support\OfficialTestSet;
-use PnScripts\Invoice\Validation\Rules\BusinessRuleValidator;
-use PnScripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Tests\Support\OfficialTestSet;
+use Pnscripts\Invoice\Validation\Rules\BusinessRuleValidator;
+use Pnscripts\Invoice\Validation\Syntax;
 
 /**
  * Runs the official EN 16931 unit tests (ConnectingEurope/eInvoicing-EN16931, test/ folder,

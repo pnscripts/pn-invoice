@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Model;
+namespace Pnscripts\Invoice\Tests\Unit\Model;
 
 use DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Model\AllowanceCharge;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Line;
-use PnScripts\Invoice\Model\TaxCategory;
-use PnScripts\Invoice\Model\VatCategory;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Model\AllowanceCharge;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Line;
+use Pnscripts\Invoice\Model\TaxCategory;
+use Pnscripts\Invoice\Model\VatCategory;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
 
 final class InvoiceCalculatorTest extends TestCase
 {

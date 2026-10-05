@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Schematron;
+namespace Pnscripts\Invoice\Validation\Schematron;
 
 use DOMDocument;
 use DOMElement;
 use DOMXPath;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\ValidationResult;
-use PnScripts\Invoice\Validation\Violation;
-use PnScripts\Invoice\Validation\XmlLoader;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\Violation;
+use Pnscripts\Invoice\Validation\XmlLoader;
 use RuntimeException;
 
 /**

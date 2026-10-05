@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
-use PnScripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\Syntax;
 
 /**
  * Syntax-neutral read access to the EN 16931 business terms of a UBL or CII document.

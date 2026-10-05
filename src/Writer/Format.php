@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Writer;
+namespace Pnscripts\Invoice\Writer;
 
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * Number formatting shared by the writers.

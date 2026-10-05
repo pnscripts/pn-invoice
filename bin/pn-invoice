@@ -3,7 +3,7 @@
 
 declare(strict_types=1);
 
-use PnScripts\Invoice\Cli\Application;
+use Pnscripts\Invoice\Cli\Application;
 
 $autoloaders = [
     __DIR__ . '/../vendor/autoload.php',       // package checkout

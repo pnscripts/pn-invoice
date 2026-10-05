@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
-use PnScripts\Invoice\Validation\View\AllowanceChargeView;
-use PnScripts\Invoice\Validation\View\InvoiceView;
-use PnScripts\Invoice\Validation\View\PartyView;
-use PnScripts\Invoice\Validation\View\PeriodView;
+use Pnscripts\Invoice\Validation\View\AllowanceChargeView;
+use Pnscripts\Invoice\Validation\View\InvoiceView;
+use Pnscripts\Invoice\Validation\View\PartyView;
+use Pnscripts\Invoice\Validation\View\PeriodView;
 
 /**
  * EN 16931 core business rules (BR-nn): presence of mandatory business terms and simple value checks.

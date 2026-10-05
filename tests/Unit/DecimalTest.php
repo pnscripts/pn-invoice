@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit;
+namespace Pnscripts\Invoice\Tests\Unit;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 final class DecimalTest extends TestCase
 {

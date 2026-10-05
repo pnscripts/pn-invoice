@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
 use InvalidArgumentException;
-use PnScripts\Invoice\Decimal;
-use PnScripts\Invoice\Model\VatCategory;
-use PnScripts\Invoice\Validation\View\AllowanceChargeView;
-use PnScripts\Invoice\Validation\View\InvoiceView;
-use PnScripts\Invoice\Validation\View\LineView;
+use Pnscripts\Invoice\Decimal;
+use Pnscripts\Invoice\Model\VatCategory;
+use Pnscripts\Invoice\Validation\View\AllowanceChargeView;
+use Pnscripts\Invoice\Validation\View\InvoiceView;
+use Pnscripts\Invoice\Validation\View\LineView;
 
 /**
  * VAT category rules BR-{S,Z,E,AE}-01 .. -10, implemented once and parameterised by category.

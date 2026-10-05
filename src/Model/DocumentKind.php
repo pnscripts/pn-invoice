@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Selects the syntax root: UBL Invoice vs. UBL CreditNote. In CII both are a

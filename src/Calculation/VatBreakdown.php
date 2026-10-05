@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Calculation;
+namespace Pnscripts\Invoice\Calculation;
 
-use PnScripts\Invoice\Decimal;
-use PnScripts\Invoice\Model\VatCategory;
+use Pnscripts\Invoice\Decimal;
+use Pnscripts\Invoice\Model\VatCategory;
 
 /**
  * VAT breakdown (BG-23) for one VAT category and rate.

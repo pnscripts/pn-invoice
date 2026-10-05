@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
 use DOMDocument;
-use PnScripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\Syntax;
 
 final class ViewFactory
 {

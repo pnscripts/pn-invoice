@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 /**
  * Seller (BG-4), Buyer (BG-7), Payee (BG-10) or Seller tax representative (BG-11).

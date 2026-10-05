@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Xsd;
+namespace Pnscripts\Invoice\Validation\Xsd;
 
 use DOMDocument;
 use LibXMLError;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\ValidationResult;
-use PnScripts\Invoice\Validation\Violation;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\Violation;
 
 /**
  * Layer (a): validates a document against the official UBL 2.1 or CII D16B XML Schema using libxml.

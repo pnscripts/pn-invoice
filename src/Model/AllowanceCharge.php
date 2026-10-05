@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 use InvalidArgumentException;
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * Document level allowance/charge (BG-20 / BG-21) or invoice line allowance/charge (BG-27 / BG-28).

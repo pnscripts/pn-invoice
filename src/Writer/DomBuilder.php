@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Writer;
+namespace Pnscripts\Invoice\Writer;
 
 use DOMDocument;
 use DOMElement;

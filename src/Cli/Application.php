@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Cli;
+namespace Pnscripts\Invoice\Cli;
 
-use PnScripts\Invoice\Validation\InvoiceValidator;
-use PnScripts\Invoice\Validation\Rules\BusinessRuleValidator;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\Rules\BusinessRuleValidator;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\ValidationResult;
 
 /**
  * Minimal dependency-free command line front end.
@@ -16,7 +16,7 @@ use PnScripts\Invoice\Validation\ValidationResult;
  */
 final class Application
 {
-    public const string VERSION = '0.1.0';
+    public const string VERSION = '0.2.0';
 
     public const int EXIT_OK = 0;
     public const int EXIT_INVALID = 1;

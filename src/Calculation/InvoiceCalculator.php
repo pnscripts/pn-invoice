@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Calculation;
+namespace Pnscripts\Invoice\Calculation;
 
 use LogicException;
-use PnScripts\Invoice\Decimal;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\TaxCategory;
+use Pnscripts\Invoice\Decimal;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\TaxCategory;
 
 /**
  * Derives document totals and the VAT breakdown following EN 16931 calculation rules

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation;
+namespace Pnscripts\Invoice\Validation;
 
 enum Severity: string
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
 final readonly class AllowanceChargeView
 {

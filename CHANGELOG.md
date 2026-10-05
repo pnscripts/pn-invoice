@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-05
+
+### Changed
+
+- **Breaking:** the root namespace is now `Pnscripts\Invoice\` (was `PnScripts\Invoice\`), the
+  spelling every PN Scripts package uses. Behaviour is unchanged. To upgrade, replace
+  `PnScripts\Invoice\` with `Pnscripts\Invoice\` in your `use` statements and type references,
+  for example `sed -i 's/PnScripts\\Invoice/Pnscripts\\Invoice/g' $(grep -rl 'PnScripts\\Invoice' src)`.
+  Composer's autoloader matches the prefix case-sensitively, so the old spelling fails with
+  "class not found" until it is updated.
+
 ## [0.1.0] - 2026-10-04
 
 ### Added

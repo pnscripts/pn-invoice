@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Rules;
+namespace Pnscripts\Invoice\Validation\Rules;
 
 use DOMDocument;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\ValidationResult;
-use PnScripts\Invoice\Validation\View\InvoiceView;
-use PnScripts\Invoice\Validation\View\ViewFactory;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\View\InvoiceView;
+use Pnscripts\Invoice\Validation\View\ViewFactory;
 
 /**
  * Layer (b): runs the PHP implementation of a documented subset of the EN 16931 business rules.

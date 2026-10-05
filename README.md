@@ -27,7 +27,7 @@ The official UBL 2.1 and CII D16B XML Schemas are bundled in `resources/schemas/
 ### Create an invoice
 
 ```php
-use PnScripts\Invoice\Model\{Address, AllowanceCharge, Identifier, Invoice, Line, Party, PaymentMeans, Specification, TaxCategory};
+use Pnscripts\Invoice\Model\{Address, AllowanceCharge, Identifier, Invoice, Line, Party, PaymentMeans, Specification, TaxCategory};
 
 $seller = new Party(
     name: 'Example Supplier Ltd',
@@ -65,12 +65,12 @@ $totals = $invoice->totals();            // line total, VAT breakdown, payable a
 echo $totals->payableAmount->toFixed(2); // "1524.00"
 ```
 
-Amounts are passed as strings or integers and kept as exact decimals (`PnScripts\Invoice\Decimal`, backed by bcmath). Totals and the VAT breakdown are always **derived** from lines and allowances/charges, so the calculation rules BR-CO-10 to BR-CO-17 hold by construction.
+Amounts are passed as strings or integers and kept as exact decimals (`Pnscripts\Invoice\Decimal`, backed by bcmath). Totals and the VAT breakdown are always **derived** from lines and allowances/charges, so the calculation rules BR-CO-10 to BR-CO-17 hold by construction.
 
 ### Write UBL or CII
 
 ```php
-use PnScripts\Invoice\Writer\{CiiWriter, UblWriter};
+use Pnscripts\Invoice\Writer\{CiiWriter, UblWriter};
 
 $ublXml = (new UblWriter())->write($invoice);   // <Invoice> or <CreditNote> depending on $invoice->kind
 $ciiXml = (new CiiWriter())->write($invoice);   // <rsm:CrossIndustryInvoice>
@@ -81,7 +81,7 @@ A credit note is the same model with `kind: DocumentKind::CreditNote` (type code
 ### Validate
 
 ```php
-use PnScripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
 
 $result = (new InvoiceValidator())->validateXml($ublXml);   // or validateFile($path), validateInvoice($invoice)
 
@@ -138,9 +138,9 @@ Run `vendor/bin/pn-invoice rules` for the full list with descriptions.
 The official EN 16931 Schematron, Peppol BIS and XRechnung rules need an **XSLT 2.0** processor. PHP's `ext-xsl` only supports XSLT 1.0, so this library does not run them itself. Instead it offers the `SchematronValidator` interface and an SVRL parser. A ready-made adapter runs any command that prints SVRL (Schematron Validation Report Language), without a shell:
 
 ```php
-use PnScripts\Invoice\Validation\InvoiceValidator;
-use PnScripts\Invoice\Validation\Schematron\CommandSchematronValidator;
-use PnScripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\InvoiceValidator;
+use Pnscripts\Invoice\Validation\Schematron\CommandSchematronValidator;
+use Pnscripts\Invoice\Validation\Syntax;
 
 $schematron = new CommandSchematronValidator([
     Syntax::UblInvoice->value => ['java', '-jar', '/opt/saxon/saxon-he.jar', '-s:{file}', '-xsl:/opt/en16931/ubl/xslt/EN16931-UBL-validation.xslt'],

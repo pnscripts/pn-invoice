@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\View;
+namespace Pnscripts\Invoice\Validation\View;
 
 use DOMDocument;
 use DOMElement;
 use InvalidArgumentException;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 /**
  * EN 16931 UBL 2.1 syntax binding of {@see InvoiceView}.

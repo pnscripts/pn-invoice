@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 use InvalidArgumentException;
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * Invoice line (BG-25) including item (BG-31) and price details (BG-29).

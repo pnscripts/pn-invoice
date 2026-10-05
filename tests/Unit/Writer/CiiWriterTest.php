@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Writer;
+namespace Pnscripts\Invoice\Tests\Unit\Writer;
 
 use DateTimeImmutable;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Model\DocumentReference;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Model\Specification;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Tests\Support\XPathAssertions as X;
-use PnScripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Model\DocumentReference;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Model\Specification;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Tests\Support\XPathAssertions as X;
+use Pnscripts\Invoice\Writer\CiiWriter;
 
 final class CiiWriterTest extends TestCase
 {

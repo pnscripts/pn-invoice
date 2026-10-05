@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Cli;
+namespace Pnscripts\Invoice\Tests\Unit\Cli;
 
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Cli\Application;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Cli\Application;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 final class ApplicationTest extends TestCase
 {

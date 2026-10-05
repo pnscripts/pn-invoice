@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Model;
+namespace Pnscripts\Invoice\Model;
 
 use DateTimeImmutable;
 use InvalidArgumentException;
-use PnScripts\Invoice\Calculation\InvoiceCalculator;
-use PnScripts\Invoice\Calculation\Totals;
-use PnScripts\Invoice\Decimal;
+use Pnscripts\Invoice\Calculation\InvoiceCalculator;
+use Pnscripts\Invoice\Calculation\Totals;
+use Pnscripts\Invoice\Decimal;
 
 /**
  * Syntax-neutral invoice or credit note covering the EN 16931 core used in typical B2B invoicing.

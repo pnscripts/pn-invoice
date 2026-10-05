@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Validation\Schematron;
+namespace Pnscripts\Invoice\Validation\Schematron;
 
 use DOMDocument;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Validation\ValidationResult;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Validation\ValidationResult;
 use RuntimeException;
 
 /**

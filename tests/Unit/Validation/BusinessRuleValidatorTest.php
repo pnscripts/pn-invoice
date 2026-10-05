@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace PnScripts\Invoice\Tests\Unit\Validation;
+namespace Pnscripts\Invoice\Tests\Unit\Validation;
 
 use DOMDocument;
 use DOMElement;
 use InvalidArgumentException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use PnScripts\Invoice\Model\Invoice;
-use PnScripts\Invoice\Tests\Support\SampleInvoices;
-use PnScripts\Invoice\Tests\Support\XPathAssertions as X;
-use PnScripts\Invoice\Validation\Layer;
-use PnScripts\Invoice\Validation\Rules\BusinessRuleValidator;
-use PnScripts\Invoice\Validation\Rules\CalculationRules;
-use PnScripts\Invoice\Validation\Rules\VatCategoryRules;
-use PnScripts\Invoice\Validation\Severity;
-use PnScripts\Invoice\Validation\Syntax;
-use PnScripts\Invoice\Writer\CiiWriter;
-use PnScripts\Invoice\Writer\UblWriter;
+use Pnscripts\Invoice\Model\Invoice;
+use Pnscripts\Invoice\Tests\Support\SampleInvoices;
+use Pnscripts\Invoice\Tests\Support\XPathAssertions as X;
+use Pnscripts\Invoice\Validation\Layer;
+use Pnscripts\Invoice\Validation\Rules\BusinessRuleValidator;
+use Pnscripts\Invoice\Validation\Rules\CalculationRules;
+use Pnscripts\Invoice\Validation\Rules\VatCategoryRules;
+use Pnscripts\Invoice\Validation\Severity;
+use Pnscripts\Invoice\Validation\Syntax;
+use Pnscripts\Invoice\Writer\CiiWriter;
+use Pnscripts\Invoice\Writer\UblWriter;
 
 /**
  * Hand-written rule tests on documents produced by the writers and then tampered with.
@@ -149,12 +149,12 @@ final class BusinessRuleValidatorTest extends TestCase
     public function testUnsupportedVatCategoryRulesAreRejected(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        new VatCategoryRules(\PnScripts\Invoice\Model\VatCategory::NotSubjectToVat);
+        new VatCategoryRules(\Pnscripts\Invoice\Model\VatCategory::NotSubjectToVat);
     }
 
     public function testVatAmountTolerancesMirrorOfficialBindings(): void
     {
-        $d = static fn(string $v): \PnScripts\Invoice\Decimal => \PnScripts\Invoice\Decimal::of($v);
+        $d = static fn(string $v): \Pnscripts\Invoice\Decimal => \Pnscripts\Invoice\Decimal::of($v);
 
         self::assertTrue(CalculationRules::vatAmountMatches($d('100'), $d('20'), $d('20')));
         self::assertTrue(CalculationRules::vatAmountMatches($d('100'), $d('20.99'), $d('20')));

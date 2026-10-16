@@ -1,4 +1,4 @@
-# PN Invoice
+# PN Scripts Invoice
 
 Free, MIT-licensed, framework-agnostic PHP library by **PN Scripts** to **generate and validate EN 16931 e-invoices** in both syntaxes allowed by the European standard:
 
@@ -7,7 +7,7 @@ Free, MIT-licensed, framework-agnostic PHP library by **PN Scripts** to **genera
 
 It gives you a small, typed invoice model, writers for both syntaxes, and a layered validator (XML Schema + a documented set of EN 16931 business rules in pure PHP + an optional hook for a full Schematron validator). No framework, no HTTP calls, no floats.
 
-> **Disclaimer.** PN Invoice is a technical tool. It is **not legal or tax advice**, and passing its checks does **not** certify that an invoice is legally compliant. VAT treatment, exemption reasons, numbering and archiving obligations depend on your country and your business; generated invoices must be checked by you or your accountant before they are sent. The PHP business rules cover a **subset** of EN 16931 (listed below); for full conformance testing use the official Schematron through the [adapter](#full-schematron-validation-optional).
+> **Disclaimer.** PN Scripts Invoice is a technical tool. It is **not legal or tax advice**, and passing its checks does **not** certify that an invoice is legally compliant. VAT treatment, exemption reasons, numbering and archiving obligations depend on your country and your business; generated invoices must be checked by you or your accountant before they are sent. The PHP business rules cover a **subset** of EN 16931 (listed below); for full conformance testing use the official Schematron through the [adapter](#full-schematron-validation-optional).
 
 ## Requirements
 
@@ -156,7 +156,7 @@ Saxon and the XSLT files are not shipped; download them from their official sour
 ## What is not covered (yet)
 
 - **No transport.** No Peppol access point, AS4, e-mail sending or government portal upload.
-- **No country CIUS or extension profiles yet**: XRechnung, Factur-X / ZUGFeRD (PDF/A-3 embedding), Peppol BIS specific rules (PEPPOL-EN16931-*), Bulgarian, Polish KSeF and Romanian e-Factura formats. These are planned for the commercial **PN Invoice Pro** package. Setting `Specification::peppolBis3()` only writes the Peppol identifiers; it does not apply the Peppol rules.
+- **No country CIUS or extension profiles yet**: XRechnung, Factur-X / ZUGFeRD (PDF/A-3 embedding), Peppol BIS specific rules (PEPPOL-EN16931-*), Bulgarian, Polish KSeF and Romanian e-Factura formats. These are planned for the commercial **PN Scripts Invoice Pro** package. Setting `Specification::peppolBis3()` only writes the Peppol identifiers; it does not apply the Peppol rules.
 - **No XML reader** that turns UBL/CII back into the model (validation reads XML directly).
 - The model covers the EN 16931 core used in typical B2B invoices and credit notes. Not modelled yet: payee financial details beyond credit transfer, card payments, direct debit mandates, attachments (BG-24), item attributes (BG-32), item classification, delivery party name, VAT accounting currency (BT-6/BT-111), tax point date code (BT-8), project/receiving/despatch references.
 - Not a certified or accredited validator.
@@ -175,10 +175,10 @@ The official EN 16931 test files in `tests/fixtures/official/` are EUPL-1.2 lice
 
 - Issues and questions: [GitHub issues](https://github.com/pnscripts/pn-invoice/issues). Security reports: see [SECURITY.md](SECURITY.md).
 - Need e-invoicing built into a Laravel or Filament app, or an upgrade to Laravel 13 / Filament 5? See [Laravel and Filament upgrades and care](https://pnscripts.com/services/laravel-filament-care).
-- [PN Shop](https://github.com/pnscripts/pn-shop): open-source Laravel e-commerce platform. All products: [pnscripts.com/products](https://pnscripts.com/products)
+- [PN Scripts Shop](https://github.com/pnscripts/pn-shop): open-source Laravel e-commerce platform. All products: [pnscripts.com/products](https://pnscripts.com/products)
 
 ## Licence
 
-PN Invoice is released under the [MIT License](LICENSE), copyright ПН СКРИПТС ЕООД. The bundled XML Schemas keep their own licences (OASIS and UN/CEFACT notices); see [NOTICE](NOTICE). "PN Scripts" and "PN Invoice" are names of ПН СКРИПТС ЕООД and are not covered by the code licence.
+PN Scripts Invoice is released under the [MIT License](LICENSE), copyright ПН СКРИПТС ЕООД. The bundled XML Schemas keep their own licences (OASIS and UN/CEFACT notices); see [NOTICE](NOTICE). "PN Scripts" and "PN Scripts Invoice" are names of ПН СКРИПТС ЕООД and are not covered by the code licence.
 
 Security issues: see [SECURITY.md](SECURITY.md).

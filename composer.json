@@ -1,6 +1,6 @@
 {
     "name": "pnscripts/pn-invoice",
-    "description": "PN Invoice: framework-agnostic PHP library to generate and validate EN 16931 e-invoices in UBL 2.1 and UN/CEFACT CII D16B syntax.",
+    "description": "PN Scripts Invoice: framework-agnostic PHP library to generate and validate EN 16931 e-invoices in UBL 2.1 and UN/CEFACT CII D16B syntax.",
     "type": "library",
     "license": "MIT",
     "keywords": [

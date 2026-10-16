@@ -83,7 +83,7 @@
     </ram:ApplicableHeaderTradeAgreement>
     <ram:ApplicableHeaderTradeDelivery/>
     <ram:ApplicableHeaderTradeSettlement>
-      <ram:InvoiceCurrencyCode>BGN</ram:InvoiceCurrencyCode>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
       <ram:ApplicableTradeTax>
         <ram:CalculatedAmount>0.00</ram:CalculatedAmount>
         <ram:TypeCode>VAT</ram:TypeCode>
@@ -112,7 +112,7 @@
         <ram:LineTotalAmount>500.00</ram:LineTotalAmount>
         <ram:ChargeTotalAmount>20.00</ram:ChargeTotalAmount>
         <ram:TaxBasisTotalAmount>520.00</ram:TaxBasisTotalAmount>
-        <ram:TaxTotalAmount currencyID="BGN">0.00</ram:TaxTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">0.00</ram:TaxTotalAmount>
         <ram:GrandTotalAmount>520.00</ram:GrandTotalAmount>
         <ram:DuePayableAmount>520.00</ram:DuePayableAmount>
       </ram:SpecifiedTradeSettlementHeaderMonetarySummation>

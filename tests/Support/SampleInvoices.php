@@ -119,7 +119,7 @@ final class SampleInvoices
         return new Invoice(
             number: 'INV-2026-0003',
             issueDate: new DateTimeImmutable('2026-10-03'),
-            currency: 'BGN',
+            currency: 'EUR',
             seller: self::seller(),
             buyer: self::buyer('BG', null),
             lines: [new Line('1', 'Training course', '1', 'C62', '500', $exempt)],

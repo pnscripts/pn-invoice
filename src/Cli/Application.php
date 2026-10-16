@@ -16,7 +16,7 @@ use Pnscripts\Invoice\Validation\ValidationResult;
  */
 final class Application
 {
-    public const string VERSION = '0.2.0';
+    public const string VERSION = '0.2.1';
 
     public const int EXIT_OK = 0;
     public const int EXIT_INVALID = 1;

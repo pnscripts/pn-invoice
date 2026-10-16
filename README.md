@@ -142,16 +142,24 @@ use Pnscripts\Invoice\Validation\InvoiceValidator;
 use Pnscripts\Invoice\Validation\Schematron\CommandSchematronValidator;
 use Pnscripts\Invoice\Validation\Syntax;
 
+// Saxon-HE 12 needs its xmlresolver jars on the class path ("java -jar" alone fails with
+// NoClassDefFoundError: org/xmlresolver/Resolver). On Windows separate the jars with ";".
+$saxon = ['java', '-cp', '/opt/saxon/Saxon-HE-12.9.jar:/opt/saxon/xmlresolver-5.3.3.jar:/opt/saxon/xmlresolver-5.3.3-data.jar', 'net.sf.saxon.Transform', '-s:{file}'];
+
 $schematron = new CommandSchematronValidator([
-    Syntax::UblInvoice->value => ['java', '-jar', '/opt/saxon/saxon-he.jar', '-s:{file}', '-xsl:/opt/en16931/ubl/xslt/EN16931-UBL-validation.xslt'],
-    Syntax::UblCreditNote->value => ['java', '-jar', '/opt/saxon/saxon-he.jar', '-s:{file}', '-xsl:/opt/en16931/ubl/xslt/EN16931-UBL-validation.xslt'],
-    Syntax::Cii->value => ['java', '-jar', '/opt/saxon/saxon-he.jar', '-s:{file}', '-xsl:/opt/en16931/cii/xslt/EN16931-CII-validation.xslt'],
+    Syntax::UblInvoice->value => [...$saxon, '-xsl:/opt/en16931/ubl/xslt/EN16931-UBL-validation.xslt'],
+    Syntax::UblCreditNote->value => [...$saxon, '-xsl:/opt/en16931/ubl/xslt/EN16931-UBL-validation.xslt'],
+    Syntax::Cii->value => [...$saxon, '-xsl:/opt/en16931/cii/xslt/EN16931-CII-validation.xslt'],
 ]);
 
 $result = (new InvoiceValidator(schematron: $schematron))->validateFile('invoice.xml');
 ```
 
-Saxon and the XSLT files are not shipped; download them from their official sources. You can also implement `SchematronValidator` yourself (for example to call a validation service).
+Saxon and the XSLT files are not shipped; download them from their official sources: Saxon-HE and xmlresolver from Maven Central (`net.sf.saxon:Saxon-HE`, `org.xmlresolver:xmlresolver` and its `data` jar), the artefacts from the [EN 16931 releases](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases). You can also implement `SchematronValidator` yourself (for example to call a validation service).
+
+This exact setup was run on 2026-10-16 (Saxon-HE 12.9, OpenJDK 21, artefacts 1.3.17): every golden file in `tests/fixtures/golden/` passes the official Schematron with no errors. `tests/Integration/OfficialSchematronTest.php` repeats it when `PN_INVOICE_SAXON_CP` (the class path above) and `PN_INVOICE_EN16931_DIR` (the unpacked artefacts, with `ubl/` and `cii/` folders) are set.
+
+**Currency codes.** The PHP rules do not check code lists (BR-CL). Since artefacts 1.3.17 the official ISO 4217 list no longer contains `BGN`: Bulgaria has used the euro since 1 January 2026, so invoices in BGN fail BR-CL-03/BR-CL-04 in the official Schematron. Use `EUR`.
 
 ## What is not covered (yet)
 

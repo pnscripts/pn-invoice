@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-16
+
+### Fixed
+
+- README: the Schematron example used `java -jar saxon-he.jar`, which fails with Saxon-HE 12
+  (`NoClassDefFoundError: org/xmlresolver/Resolver`); it now puts Saxon and its xmlresolver
+  jars on the class path and says where to download them.
+- The VAT-exempt sample and its golden files used `BGN`, which the official EN 16931 artefacts
+  1.3.17 reject (BR-CL-03, BR-CL-04): Bulgaria has used the euro since 1 January 2026. The sample
+  is now in `EUR`, and the README explains the code-list change.
+
+### Added
+
+- `OfficialSchematronTest`: runs every golden file through the official EN 16931 Schematron
+  with the `CommandSchematronValidator` adapter (Saxon-HE 12.9, artefacts 1.3.17: no errors).
+  It is skipped unless `PN_INVOICE_SAXON_CP` and `PN_INVOICE_EN16931_DIR` are set.
+
 ## [0.2.0] - 2026-10-05
 
 ### Changed

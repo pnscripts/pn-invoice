@@ -8,6 +8,11 @@ on:
 permissions:
   contents: read
 
+# A newer push to the same branch or pull request replaces a run still in progress.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   tests:
     name: PHP ${{ matrix.php }}
@@ -17,9 +22,9 @@ jobs:
       matrix:
         php: ['8.3', '8.4', '8.5']
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
         with:
           php-version: ${{ matrix.php }}
           extensions: bcmath, dom, libxml
@@ -30,6 +35,12 @@ jobs:
       # (PHPUnit 12.5 on PHP 8.3, PHPUnit 13 on PHP >= 8.4.1).
       - name: Install dependencies
         run: composer update --no-interaction --no-progress --prefer-dist
+
+      # The newest versions the constraints allow, checked against the
+      # advisories: what a new install of this library gets.
+      - name: Composer audit
+        if: matrix.php == '8.4'
+        run: composer audit
 
       - name: Coding standard
         if: matrix.php == '8.4'
@@ -48,8 +59,8 @@ jobs:
     name: Lowest dependencies (PHP 8.3)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: shivammathur/setup-php@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
         with:
           php-version: '8.3'
           extensions: bcmath, dom, libxml

@@ -53,6 +53,7 @@
         "cs": "php-cs-fixer fix --dry-run --diff",
         "cs:fix": "php-cs-fixer fix",
         "check": [
+            "@composer audit",
             "@cs",
             "@analyse",
             "@test"
